@@ -12,8 +12,8 @@ public class RobotspringApplication {
     public static void main(String[] args) {
 
         ApplicationContext context = new ClassPathXmlApplicationContext("ApplicationContext.xml");
-        ModelT1000 t1000 = (ModelT1000) context.getBean("t1000");
-        t1000.action();
+        ModelT1000 model1 = (ModelT1000) context.getBean("modelT1000");
+        System.out.println(model1);
 
 //        ((ConfigurableApplicationContext)context).close();
     }

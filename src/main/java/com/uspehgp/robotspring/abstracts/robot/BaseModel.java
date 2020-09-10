@@ -11,13 +11,10 @@ import org.springframework.beans.factory.annotation.Required;
 public abstract class BaseModel implements Robot {
 
 	@Autowired
-	@Qualifier("sonyHand")
 	private Hand hand;
 	@Autowired
-	@Qualifier("sonyLeg")
 	private Leg leg;
 	@Autowired
-	@Qualifier("sonyHead")
 	private Head head;
 
 	public BaseModel() {

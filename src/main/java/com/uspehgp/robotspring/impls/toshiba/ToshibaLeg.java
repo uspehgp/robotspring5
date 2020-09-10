@@ -1,7 +1,10 @@
 package com.uspehgp.robotspring.impls.toshiba;
 
 import com.uspehgp.robotspring.interfaces.Leg;
+import org.springframework.stereotype.Component;
 
+
+@Component
 public class ToshibaLeg implements Leg {
 	
 	public void go(){
